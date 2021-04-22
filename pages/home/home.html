@@ -12,4 +12,17 @@
   <p>
     Source: https://www.bdo.com.ph/personal/loans/auto-loan/auto-loan-calculator
   </p>
-</ion-content>
+  <br />
+<img src="https://cdn.jsdelivr.net/gh/J0-qui/BMI-Calculator@master/BMI%20apple.webp">
+<ion-item>
+    <ion-label>Height in Meter:</ion-label>
+    <ion-input type="number" [(ngModel)]="height"></ion-input>
+ </ion-item>
+ <ion-item>
+   <ion-label>Weight in Kilogram:</ion-label>
+   <ion-input type="number" [(ngModel)]="weight"></ion-input>
+  </ion-item>
+  <button ion-button color="secondary" (click)="calculateBMI()">CALCULATE</button>
+  <ion-item *ngIf="bmi">
+    <h2>Your BMI is: {{bmi}} <code> ({{bmiMessage}})</code></h2>
+    </ion-item>  
