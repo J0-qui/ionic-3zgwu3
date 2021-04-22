@@ -15,12 +15,10 @@ export class HomePage {
   totalinterest: number;
   monthlyamortization: number; 
   
-calculateAL() {
-  this.bmi = this.weight / (this.height * this.height);
-  this.bmi = parseFloat(this.bmi.toFixed(2));
+  constructor(public navCtrl: NavController)  {}
 
-  constructor(public navCtrl: NavController) {
-
-  }
-
+  calculateAL() {
+  this.downpaymentamount = this.vehicleprice * this.downpayment/100
+  this.downpaymentamount = parseFloat(this.downpaymentamount.toFixed(2));
+}
 }

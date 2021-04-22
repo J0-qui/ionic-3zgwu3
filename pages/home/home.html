@@ -23,14 +23,14 @@
    <ion-input type="number" [(ngModel)]="loanterm"></ion-input>
 </ion-item>
 <ion-item>
-   <ion-label>Monthly Payment:</ion-label>
+   <ion-label>Downpayment:</ion-label>
    <ion-input type="number" [(ngModel)]="downpayment"></ion-input>
 </ion-item>
 
-  <button ion-button color="secondary" (click)="calculateBMI()">CALCULATE</button>
+  <button ion-button color="secondary" (click)="calculateAL()">CALCULATE</button>
 
-  <ion-item *ngIf="bmi">
-    <h2>Your Downpayment Amount is: {{bmi}} <code> ({{bmiMessage}})</code></h2>
+  <ion-item *ngIf="downpaymentamount">
+    <h2>Your Downpayment Amount is: {{downpaymentamount}} </h2>
     </ion-item>  
   <ion-item *ngIf="bmi">
     <h2>Your Loan Amount is: {{bmi}} <code> ({{bmiMessage}})</code></h2>
