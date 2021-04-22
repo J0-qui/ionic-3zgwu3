@@ -19,11 +19,11 @@
     <ion-input type="number" [(ngModel)]="vehicleprice"></ion-input>
 </ion-item>
 <ion-item>
-   <ion-label>Loan Term:</ion-label>
+   <ion-label>Loan Term [36, 48 or 60 months]:</ion-label>
    <ion-input type="number" [(ngModel)]="loanterm"></ion-input>
 </ion-item>
 <ion-item>
-   <ion-label>Downpayment:</ion-label>
+   <ion-label>Downpayment [20, 30, 40%]:</ion-label>
    <ion-input type="number" [(ngModel)]="downpayment"></ion-input>
 </ion-item>
 
@@ -32,9 +32,9 @@
   <ion-item *ngIf="downpaymentamount">
     <h2>Your Downpayment Amount is: {{downpaymentamount}} </h2>
     </ion-item>  
-  <ion-item *ngIf="bmi">
-    <h2>Your Loan Amount is: {{bmi}} <code> ({{bmiMessage}})</code></h2>
+  <ion-item *ngIf="loanamount">
+    <h2>Your Loan Amount is: {{loanamount}} </h2>
     </ion-item> 
-  <ion-item *ngIf="bmi">
-    <h2>Your Monthly Payment is: {{bmi}} <code> ({{bmiMessage}})</code></h2>
-    </ion-item> 
+  <ion-item *ngIf="monthlyamortization">
+    <h2>Your Monthly Payment is: {{monthlyamortization}} </h2>
+  </ion-item> 
