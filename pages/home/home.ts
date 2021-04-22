@@ -6,14 +6,19 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  height: number;
-  weight: number;
-  bmi: number;
-  bmiMessage: string;
-calculateBMI() {
+  AL: number;
+  vehicleprice: number;
+  loanterm: number;
+  loanamount: number;
+  downpayment: number;
+  downpaymentamount: number;
+  totalinterest: number;
+  monthlyamortization: number; 
+  
+calculateAL() {
   this.bmi = this.weight / (this.height * this.height);
   this.bmi = parseFloat(this.bmi.toFixed(2));
-  
+
   constructor(public navCtrl: NavController) {
 
   }
