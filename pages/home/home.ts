@@ -25,7 +25,7 @@ export class HomePage {
   this.totalinterest = this.loanamount * 0.3026
   this.totalinterest = parseFloat(this.totalinterest.toFixed(2));
   this.monthlyamortization = (this.loanamount + this.totalinterest)/this.loanterm
-  this.monthlyamortization = parseFloat(this.totalinterest.toFixed(2));
+  this.monthlyamortization = parseFloat(this.monthlyamortization.toFixed(2));
 
 }
 }
